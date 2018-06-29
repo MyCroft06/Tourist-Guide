@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.test.ertugrulemre.htmlparsing.MainActivity"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/museum_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Museum"
+        android:textColor="#000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/museum_image"
+        app:layout_constraintStart_toStartOf="@+id/museum_image"
+        app:layout_constraintTop_toBottomOf="@+id/museum_image" />
+
+    <ImageView
+        android:id="@+id/museum_image"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/near_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qscdf"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/near_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Near"
+        android:textColor="#000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/near_image"
+        app:layout_constraintStart_toStartOf="@+id/near_image"
+        app:layout_constraintTop_toBottomOf="@+id/near_image" />
+
+    <ImageView
+        android:id="@+id/near_image"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/museum_image"
+        app:layout_constraintTop_toTopOf="@+id/museum_image"
+        app:srcCompat="@drawable/grr"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/recent_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Recent"
+        android:textColor="#000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/recent_image"
+        app:layout_constraintStart_toStartOf="@+id/recent_image"
+        app:layout_constraintTop_toBottomOf="@+id/recent_image" />
+
+    <ImageView
+        android:id="@+id/recent_image"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="@+id/museum_image"
+        app:layout_constraintTop_toBottomOf="@+id/museum_txt"
+        app:srcCompat="@drawable/qwert"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Profile"
+        android:textColor="#000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="@+id/near_image"
+        app:layout_constraintTop_toBottomOf="@+id/near_txt"
+        app:srcCompat="@drawable/imgoffer"
+        android:onClick="onClick" />
+
+</android.support.constraint.ConstraintLayout>
